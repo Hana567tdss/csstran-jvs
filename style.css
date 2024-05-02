@@ -51,12 +51,38 @@ body{
     animation-name: letsgo;
     animation-duration: 4s;
     animation-fill-mode:both;
-   animation-iteration-count: infinite;
-   animation-timing-function:cubic-bezier(.19,.83,1,.06);
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(.19,.83,1,.06);
+}
+.wind{
+    width: 10%;
+    height: 50px;
+    box-sizing: border-box;
+    border: #f7f0f0;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.wind:nth-child(1){
+
+    height: 70px;
+    animation: flow 7s linear infinite reverse;
+   
+}
+.wind:nth-child(2){
+    margin-right: 43px;
+    margin-top: 53px;
+    animation: flow 2s backwards infinite reverse;
+   
 }
 @keyframes letsgo{
     from{ transform: translateX(-200px)}
     to{
         transform: translateX(1390px)         
     }
+}
+@keyframes flow{
+    from{
+        left:-200}
+   to{ left:100%} 
 }
