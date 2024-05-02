@@ -52,6 +52,7 @@ body{
     animation-duration: 4s;
     animation-fill-mode:both;
    animation-iteration-count: infinite;
+   animation-timing-function:cubic-bezier(.19,.83,1,.06);
 }
 @keyframes letsgo{
     from{ transform: translateX(-200px)}
